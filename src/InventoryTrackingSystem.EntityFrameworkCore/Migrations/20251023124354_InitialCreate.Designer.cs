@@ -13,8 +13,8 @@ using Volo.Abp.EntityFrameworkCore;
 namespace InventoryTrackingSystem.Migrations
 {
     [DbContext(typeof(InventoryTrackingSystemDbContext))]
-    [Migration("20251023122559_Initial")]
-    partial class Initial
+    [Migration("20251023124354_InitialCreate")]
+    partial class InitialCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

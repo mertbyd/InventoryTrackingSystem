@@ -1,7 +1,90 @@
 {
   "culture": "tr",
   "texts": {
-    "MyAccount":  "Hesabım",
-    "SamplePageMessage": "InventoryTrackingSystem modulünden örnek bir sayfa"
+    "InventorySystem:GENERAL_VALIDATION_FAILED": "Doğrulama hatası oluştu",
+    "InventorySystem:GENERAL_UNKNOWN_ERROR": "Bilinmeyen bir hata oluştu",
+    "InventorySystem:GENERAL_INVALID_OPERATION": "Geçersiz işlem",
+    "InventorySystem:GENERAL_RECORD_ALREADY_EXISTS": "Bu kayıt zaten mevcut",
+    "InventorySystem:GENERAL_RECORD_IN_USE": "Bu kayıt kullanımda",
+    "InventorySystem:GENERAL_ACCESS_DENIED": "Erişim reddedildi",
+    "InventorySystem:GENERAL_INVALID_INPUT": "Geçersiz giriş",
+
+    "InventorySystem:INVENTORY_NOT_FOUND": "Envanter bulunamadı",
+    "InventorySystem:INVENTORY_ALREADY_IN_USE": "Bu envanter zaten kullanımda",
+    "InventorySystem:INVENTORY_NOT_AVAILABLE": "Bu envanter müsait değil",
+    "InventorySystem:INVENTORY_CANNOT_DELETE": "Envanter silinemez",
+    "InventorySystem:INVENTORY_INVALID_SERIAL_NUMBER": "Geçersiz seri numarası",
+    "InventorySystem:INVENTORY_INVALID_SITE": "Geçersiz lokasyon",
+    "InventorySystem:INVENTORY_REASON_REQUIRED": "Müsait değilse sebep belirtilmelidir",
+    "InventorySystem:INVENTORY_CANNOT_UPDATE_IN_MOVEMENT": "Hareket halindeki envanter güncellenemez",
+    "InventorySystem:INVENTORY_INSUFFICIENT_STOCK": "Yetersiz stok",
+
+    "InventorySystem:MOVEMENT_REQUEST_NOT_FOUND": "Hareket talebi bulunamadı",
+    "InventorySystem:MOVEMENT_REQUEST_INVALID_STATUS": "Geçersiz talep durumu",
+    "InventorySystem:MOVEMENT_REQUEST_ALREADY_PROCESSED": "Bu talep zaten işlenmiş",
+    "InventorySystem:MOVEMENT_REQUEST_CANNOT_DELETE": "Hareket talebi silinemez",
+    "InventorySystem:MOVEMENT_REQUEST_CANNOT_UPDATE": "Hareket talebi güncellenemez",
+    "InventorySystem:MOVEMENT_REQUEST_INVALID_FROM_SITE": "Geçersiz kaynak lokasyon",
+    "InventorySystem:MOVEMENT_REQUEST_INVALID_TO_SITE": "Geçersiz hedef lokasyon",
+    "InventorySystem:MOVEMENT_REQUEST_SAME_SITE": "Kaynak ve hedef lokasyon aynı olamaz",
+    "InventorySystem:MOVEMENT_REQUEST_NO_DETAILS": "Talep detayı bulunmuyor",
+    "InventorySystem:MOVEMENT_REQUEST_ALREADY_APPROVED": "Bu talep zaten onaylanmış",
+    "InventorySystem:MOVEMENT_REQUEST_ALREADY_REJECTED": "Bu talep zaten reddedilmiş",
+
+    "InventorySystem:MOVEMENT_REQUEST_DETAIL_NOT_FOUND": "Talep detayı bulunamadı",
+    "InventorySystem:MOVEMENT_REQUEST_DETAIL_INVALID_QUANTITY": "Geçersiz miktar",
+    "InventorySystem:MOVEMENT_REQUEST_DETAIL_QUANTITY_EXCEEDS": "Talep edilen miktar mevcut stoku aşıyor",
+    "InventorySystem:MOVEMENT_REQUEST_DETAIL_DUPLICATE_SERIAL": "Bu seri numarası zaten eklenmiş",
+    "InventorySystem:MOVEMENT_REQUEST_DETAIL_CANNOT_DELETE": "Talep detayı silinemez",
+
+    "InventorySystem:MOVEMENT_REQUEST_RESPONSE_NOT_FOUND": "Talep yanıtı bulunamadı",
+    "InventorySystem:MOVEMENT_REQUEST_RESPONSE_ALREADY_EXISTS": "Bu talep zaten yanıtlanmış",
+    "InventorySystem:MOVEMENT_REQUEST_RESPONSE_INVALID_APPROVER": "Geçersiz onaylayıcı",
+    "InventorySystem:MOVEMENT_REQUEST_RESPONSE_COMMENT_REQUIRED": "Red durumunda açıklama zorunludur",
+    "InventorySystem:MOVEMENT_REQUEST_RESPONSE_CANNOT_MODIFY": "Talep yanıtı değiştirilemez",
+
+    "InventorySystem:INVENTORY_MOVEMENT_NOT_FOUND": "Envanter hareketi bulunamadı",
+    "InventorySystem:INVENTORY_MOVEMENT_ALREADY_COMPLETED": "Bu hareket zaten tamamlanmış",
+    "InventorySystem:INVENTORY_MOVEMENT_INVALID_STATUS": "Geçersiz hareket durumu",
+    "InventorySystem:INVENTORY_MOVEMENT_VEHICLE_REQUIRED": "Lokasyon transferi için araç seçilmelidir",
+    "InventorySystem:INVENTORY_MOVEMENT_CANNOT_DELETE": "Envanter hareketi silinemez",
+    "InventorySystem:INVENTORY_MOVEMENT_CANNOT_UPDATE_COMPLETED": "Tamamlanmış hareket güncellenemez",
+    "InventorySystem:INVENTORY_MOVEMENT_INVALID_VEHICLE": "Geçersiz araç",
+
+    "InventorySystem:STOCK_NOT_FOUND": "Stok kaydı bulunamadı",
+    "InventorySystem:STOCK_INSUFFICIENT_QUANTITY": "Yetersiz stok miktarı",
+    "InventorySystem:STOCK_NEGATIVE_NOT_ALLOWED": "Stok negatif olamaz",
+    "InventorySystem:STOCK_CANNOT_DELETE": "Stok kaydı silinemez",
+    "InventorySystem:STOCK_ALREADY_EXISTS": "Bu seri numarası için stok kaydı zaten mevcut",
+    "InventorySystem:STOCK_INVALID_CALCULATION": "Stok hesaplaması hatalı",
+
+    "InventorySystem:INVENTORY_HISTORY_NOT_FOUND": "Geçmiş kaydı bulunamadı",
+    "InventorySystem:INVENTORY_HISTORY_INVALID_EVENT_TYPE": "Geçersiz olay tipi",
+    "InventorySystem:INVENTORY_HISTORY_CANNOT_MODIFY": "Geçmiş kaydı değiştirilemez",
+    "InventorySystem:INVENTORY_HISTORY_CANNOT_DELETE": "Geçmiş kaydı silinemez",
+
+    "InventorySystem:VEHICLE_NOT_FOUND": "Araç bulunamadı",
+    "InventorySystem:VEHICLE_INVALID_PLATE_NUMBER": "Geçersiz plaka numarası",
+    "InventorySystem:VEHICLE_PLATE_NUMBER_EXISTS": "Bu plaka numarası zaten kayıtlı",
+    "InventorySystem:VEHICLE_INVALID_TYPE": "Geçersiz araç tipi",
+    "InventorySystem:VEHICLE_IN_USE": "Bu araç kullanımda",
+    "InventorySystem:VEHICLE_CANNOT_DELETE": "Araç silinemez",
+
+    "InventorySystem:SERIAL_NUMBER_NOT_FOUND": "Seri numarası bulunamadı",
+    "InventorySystem:SERIAL_NUMBER_INVALID_PREFIX": "Geçersiz seri numarası öneki",
+    "InventorySystem:SERIAL_NUMBER_PREFIX_EXISTS": "Bu seri numarası öneki zaten mevcut",
+    "InventorySystem:SERIAL_NUMBER_IN_USE": "Bu seri numarası kullanımda",
+    "InventorySystem:SERIAL_NUMBER_CANNOT_DELETE": "Seri numarası silinemez",
+
+    "InventorySystem:SITE_NOT_FOUND": "Lokasyon bulunamadı",
+    "InventorySystem:SITE_INVALID_TYPE": "Geçersiz lokasyon tipi",
+    "InventorySystem:SITE_IN_USE": "Bu lokasyon kullanımda",
+    "InventorySystem:SITE_CANNOT_DELETE": "Lokasyon silinemez",
+
+    "InventorySystem:UNAVAILABILITY_REASON_NOT_FOUND": "Uygunsuzluk sebebi bulunamadı",
+    "InventorySystem:UNAVAILABILITY_REASON_INVALID": "Geçersiz uygunsuzluk sebebi",
+    "InventorySystem:UNAVAILABILITY_REASON_ALREADY_EXISTS": "Bu uygunsuzluk sebebi zaten mevcut",
+    "InventorySystem:UNAVAILABILITY_REASON_IN_USE": "Bu uygunsuzluk sebebi kullanımda",
+    "InventorySystem:UNAVAILABILITY_REASON_CANNOT_DELETE": "Uygunsuzluk sebebi silinemez"
   }
 }
