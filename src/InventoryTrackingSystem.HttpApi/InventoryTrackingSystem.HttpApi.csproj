@@ -12,5 +12,9 @@
     <ProjectReference Include="..\InventoryTrackingSystem.Application.Contracts\InventoryTrackingSystem.Application.Contracts.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controler\" />
+  </ItemGroup>
+
 </Project>
 

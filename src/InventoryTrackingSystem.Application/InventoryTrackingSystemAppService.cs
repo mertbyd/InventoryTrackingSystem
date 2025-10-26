@@ -10,4 +10,5 @@ public abstract class InventoryTrackingSystemAppService : ApplicationService
         LocalizationResource = typeof(InventoryTrackingSystemResource);
         ObjectMapperContext = typeof(InventoryTrackingSystemApplicationModule);
     }
+
 }

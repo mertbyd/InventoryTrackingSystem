@@ -6,7 +6,7 @@ public class UpdateInventoryDto
 {
     // Seri numarası değişebilir (ürün tipi değişimi)
     public Guid SerialNumberId { get; set; }
-    
+    public string Name { get; set; }
     // Lokasyon değişikliği
     public Guid CurrentSiteId { get; set; }
     

@@ -5,11 +5,8 @@ using Volo.Abp.Domain.Repositories;
 using Volo.Abp.Uow;
 using System.Threading.Tasks;
 using Volo.Abp.Data;
-using Volo.Abp.DependencyInjection; // Gerekli using eklendi
-
+using Volo.Abp.DependencyInjection; 
 namespace InventoryTrackingSystem.Seed;
-
-// Hata çözüldü: ITransientDependency arayüzü eklenerek DI sistemine otomatik kayıt sağlandı.
 public class VehicleDataSeeder : ITransientDependency
 {
     private readonly IRepository<Vehicle, Guid> _vehicleRepository;

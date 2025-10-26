@@ -1,10 +1,12 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using InventoryTrackingSystem.Entities;
 using InventoryTrackingSystem.EntityFrameworkCore;
 using InventoryTrackingSystem.Interface;
 using Volo.Abp.EntityFrameworkCore;
 using System.Threading.Tasks;
+using InventoryTrackingSystem.Models.Stock;
 using Microsoft.EntityFrameworkCore;
 
 namespace InventoryTrackingSystem.Repository;
@@ -16,6 +18,7 @@ public class InventoryRepository:BaseRepository<Inventory>,IInventoryRepository
     {
     }
 
+    // hangeAvailabilityStatusAsync
     public async Task<Inventory> ChangeAvailabilityStatusAsync(
         Guid inventoryId, 
         bool isAvailable, 
@@ -42,5 +45,20 @@ public class InventoryRepository:BaseRepository<Inventory>,IInventoryRepository
         }
         await dbContext.SaveChangesAsync();
         return inventory;
+    } 
+    public async Task<List<StockSummary>> GetStockSummaryAsync()
+    {
+        var dbContext = await GetDbContextAsync();
+        var stockSummaries = await dbContext.Set<Inventory>()
+            .Where(x => !x.IsDeleted)
+            .GroupBy(x => x.SerialNumberId)
+            .Select(g => new StockSummary // Domain model kullanıyoruz
+            {
+                SerialNumberId = g.Key,
+                TotalCount = g.Count(),
+                AvailableCount = g.Count(x => x.IsAvailableForRequest)
+            })
+            .ToListAsync();
+        return stockSummaries;
     }
 }

@@ -5,7 +5,7 @@ namespace InventoryTrackingSystem.Dtos.Inventory;
 public class CreateInventoryDto
 {
     public Guid SerialNumberId { get; set; }
-    
+    public string Name { get; set; }
     // Başlangıç lokasyonu
     public Guid CurrentSiteId { get; set; }
     

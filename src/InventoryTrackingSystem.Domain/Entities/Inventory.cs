@@ -13,6 +13,8 @@ public class Inventory:FullAuditedEntity<Guid>
     protected Inventory()
     {
     }
+
+   
     // Ana constructor
     public Inventory(Guid id) : base(id)
     {
@@ -23,5 +25,9 @@ public class Inventory:FullAuditedEntity<Guid>
         SerialNumberId = serialNumberId;
         CurrentSiteId = currentSiteId;
         IsAvailableForRequest = true;
+    }
+    public void setid(Guid id)
+    {
+        this.Id = id;
     }
 }
